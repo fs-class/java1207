@@ -22,8 +22,11 @@ public class Ex08_문자열 {
 	public static void main(String[] args) {
 		//char var1 = "A"; // 컴파일 에러
 		//char var2 = "홍길동"; // 컴파일 에러
-		String var3 = "A";
-		String var4 = "홍길동";
+		//char var3 = ''; // 컴파일 에러
+		char var4 = ' '; // 공백 하나를 포함해서 초기화
+		String var5 = "A";
+		String var6 = "홍길동";
+		String var7 = ""; // 빈 문자열도 가능
 	
 		String name = "홍길동";
 		String job = "프로그래머";
