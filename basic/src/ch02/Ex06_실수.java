@@ -1,8 +1,7 @@
 package ch02;
 
 /**
- * 10진수 65와 매핑되는 문자는 'A'
- * 16진수 0x0041과 매핑되는 문자는 'A'
+ * float 리터럴은 끝에 f 또는 F을 붙인다.
  */
 public class Ex06_실수 {
 	public static void main(String[] args) {
