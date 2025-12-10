@@ -1,0 +1,51 @@
+package ch03;
+
+/**
+ * 비트 이동 연산자
+ *     a << b   
+ *          정수 a의 각 비트를 b만큼 왼쪽으로 이동, 
+ *          오른쪽 빈 자리는 0으로 채움
+ *     a >> b   
+ *          정수 a의 각 비트를 b만큼 오른쪽으로 이동, 
+ *          왼쪽 빈 자리는 최상위 부호 비트와 같은 값으로 채움
+ *     a >>> b  
+ *          정수 a의 각 비트를 b만큼 오른쪽으로 이동, 
+ *          왼쪽 빈 자리는 0으로 채움
+ */
+public class Ex10_비트이동연산자 {
+    public static void main(String[] args) {
+		int num1 = 1;
+		int result1 = num1 << 3;
+		int result2 = num1 * (int) Math.pow(2, 3);
+		System.out.println("result1: " + result1); // 8
+		System.out.println("result2: " + result2); // 8
+		
+		int num2 = -8;
+		int result3 = num2 >> 3;
+		int result4 = num2 / (int) Math.pow(2, 3);
+		System.out.println("result3: " + result3); // -1
+		System.out.println("result4: " + result4); // -1
+        
+        int value = 772; //[00000000] [00000000] [00000011] [00000100]
+
+		//우측으로 3byte(24bit) 이동하고 끝 1바이트만 읽음: [00000000]
+		byte byte1 = (byte) (value >>> 24);
+		int int1 = byte1 & 255;
+		System.out.println("첫 번째 바이트 부호 없는 값: " + int1);
+
+		//우측으로 2byte(16bit) 이동하고 끝 1바이트만 읽음: [00000000]
+		byte byte2 = (byte) (value >>> 16);
+		int int2 = Byte.toUnsignedInt(byte2);
+		System.out.println("두 번째 바이트 부호 없는 값: " + int2);
+
+		//우측으로 1byte(8bit) 이동하고 끝 1바이트만 읽음: [00000011]
+		byte byte3 = (byte) (value >>> 8);
+		int int3 = byte3 & 255;
+		System.out.println("세 번째 바이트 부호 없는 값: " + int3);
+
+		//끝 1바이트만 읽음: [00000100]
+		byte byte4 = (byte) value;
+		int int4 = Byte.toUnsignedInt(byte4);
+		System.out.println("네 번째 바이트 부호 없는 값: " + int4);
+    }
+}
