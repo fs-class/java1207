@@ -17,7 +17,7 @@ package ch02;
  *  	Short.parseShort(str);
  *  	Integer.parseInt(str);
  *  	Long.parseLong(str);
- *  	float.parseFloat(str);
+ *  	Float.parseFloat(str);
  *  	Double.parseDouble(str);
  *  	Boolean.parseBoolean(str);
  *  
