@@ -1,0 +1,53 @@
+package ch06;
+
+/**
+ * 생성자(Constructor)?
+ * 	- new 연산자는 객체 생성 후 생성자를 호출해서 객체를 초기화한다.
+ *  - 객체 초기화란 필드를 초기화하거나 메서드를 호출해서 객체 사용 준비를 하는 것을 말한다.
+ *  - 클래스에 생성자 선언이 없으면 컴파일러는 기본 생성자(Default Constructor)를
+ *    바이트코드 파일에 자동으로 추가시킨다.
+ *  - 클래스가 public class로 선언되면 기본 생성자도 public이 붙고,
+ *    클래스가 public 없이 선언되면 기본 생성자도 public이 붙지 않는다.
+ *  - 명시적으로 선언한 생성자가 있다면, 컴파일러는 기본 생성자를 추가하지 않는다.
+ *  - 생성자를 선언하는 이유? 객체를 다양하게 초기화하기 위해서
+ *  - 생성자는 리턴 타입이 없고, 클래스 이름과 동일해야 한다.
+ *  - 매개변수는 new 연산자로 생성자를 호출할 때 매개값을 생성자 블록 내부로 전달하는 역할을 한다.
+ *
+ * 생성자 선언
+ *  1. 기본 생성자
+ *  	[public] 클래스(){}
+ *  2. 사용자 지정 생성자
+ *  	클래스(매개변수, ...) { //객체 초기화 코드 }
+ *
+ * 생성자 오버로딩(Overloading)?
+ *  - 매개변수의 타입, 개수, 순서를 다르게 여러 개의 생성자를 선언하는 것
+ *  - 왜? 매개값으로 객체의 필드를 다양하게 초기화하기 위해서
+ *
+ */
+public class Car1 {
+	// 필드 선언
+	String company = "현대자동차";
+	String model = "그랜저";
+	String color = "검정";
+	int maxSpeed = 350;
+	int speed;
+
+	// 생성자 오버로딩
+	// 기본 생성자
+	Car1(){}
+	//생성자 선언
+	Car1(String model) {
+		this.model = model;
+	}
+
+	Car1(String model, String color) {
+		this.model = model;
+		this.color = color;
+	}
+
+	Car1(String model, String color, int maxSpeed) {
+		this.model = model;
+		this.color = color;
+		this.maxSpeed = maxSpeed;
+	}
+}
