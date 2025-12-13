@@ -1,4 +1,4 @@
-package ch06;
+package ch06.ex08_인스턴스멤버와this키워드;
 
 public class Car4Main {
 	public static void main(String[] args) {

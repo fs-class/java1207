@@ -1,4 +1,4 @@
-package ch06;
+package ch06.ex09_정적멤버;
 
 /**
  * 정적 멤버 사용

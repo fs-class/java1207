@@ -1,4 +1,4 @@
-package ch06;
+package ch06.ex10_정적블록;
 
 public class TelevisionMain {
 

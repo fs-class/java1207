@@ -1,4 +1,4 @@
-package ch06;
+package ch06.ex03_필드초기화;
 
 public class KoreanMain {
 	public static void main(String[] args) {

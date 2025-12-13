@@ -1,7 +1,7 @@
-package ch06;
+package ch06.ex04_this생성자호출;
 
 /**
- * this()
+ * 13.this()
  * 	- 다른 생성자를 호출 
  */
 public class Car2 {

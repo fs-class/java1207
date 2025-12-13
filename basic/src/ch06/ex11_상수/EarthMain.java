@@ -1,4 +1,4 @@
-package ch06;
+package ch06.ex11_상수;
 
 public class EarthMain {
 

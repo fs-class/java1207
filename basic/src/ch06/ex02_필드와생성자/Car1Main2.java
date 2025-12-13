@@ -1,4 +1,4 @@
-package ch06;
+package ch06.ex02_필드와생성자;
 
 public class Car1Main2 {
 

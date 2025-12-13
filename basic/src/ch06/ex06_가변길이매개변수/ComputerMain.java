@@ -1,4 +1,4 @@
-package ch06;
+package ch06.ex06_가변길이매개변수;
 
 /**
  *	가변길이 매개변수

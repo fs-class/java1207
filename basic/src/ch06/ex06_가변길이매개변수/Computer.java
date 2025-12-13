@@ -1,7 +1,7 @@
-package ch06;
+package ch06.ex06_가변길이매개변수;
 
 /**
- * 가변 길이 매개변수
+ * 16.가변 길이 매개변수
  * 		타입 메서드(타입 ... 매개변수) { 실행코드; }
  */
 public class Computer {

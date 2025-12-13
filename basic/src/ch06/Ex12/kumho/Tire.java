@@ -1,4 +1,4 @@
-package ch06.kumho;
+package ch06.Ex12.kumho;
 
 public class Tire {
 

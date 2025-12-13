@@ -1,4 +1,4 @@
-package ch06;
+package ch06.ex07_리턴문;
 
 public class Car3Main {
 

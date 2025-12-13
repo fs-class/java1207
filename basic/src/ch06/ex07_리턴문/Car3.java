@@ -1,7 +1,7 @@
-package ch06;
+package ch06.ex07_리턴문;
 
 /**
- * return 문
+ * 17.return 문
  * 	- 메서드의 실행을 강제 종료하고, 호출한 곳으로 돌아간다는 의미이다.
  * 		return [리턴값]; 
  */

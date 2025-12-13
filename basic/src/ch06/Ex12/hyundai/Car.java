@@ -1,7 +1,8 @@
 // 패키지 선언
-package ch06.hyundai;
+package ch06.Ex12.hyundai;
 
 /**
+ * 26.패키지
  * 같은 패키지에 있는 클래스는 import 없이 사용할 수 있으나,
  * 다른 패키지에 있는 클래스는 import 문을 이용해서 어떤 패키지의 클래스를 사용하는지 명시해야 한다.
  * import 문이 작성되는 위치는 패키지 선언과 클래스 선언 사이이다.
@@ -10,10 +11,8 @@ package ch06.hyundai;
  */
 //import 문으로 다른 패키지 클래스 사용을 명시
 // 만약 동일한 패키지에 다수의 클래스를 사용하는 경우 클래스명을 생략하고 *을 사용할 수 있다.
-import ch06.hankook.*;
-//import ch06.kumho.AllSeasonTire;
-import ch06.kumho.*;
-
+import ch06.Ex12.hankook.*;
+import ch06.Ex12.kumho.AllSeasonTire;
 /**
  * 패키지(Package)
  *  - 클래스의 일부분이며, 클래스를 식별하는 용도로 사용된다.
@@ -36,8 +35,9 @@ public class Car {
 	//Tire trie = new Tire(); // 컴파일 에러
 
 	//부품 필드 선언
-	ch06.hankook.Tire tire1 = new ch06.hankook.Tire();
-	ch06.kumho.Tire tire2 = new ch06.kumho.Tire();
+	ch06.Ex12.hankook.Tire tire1 = new ch06.Ex12.hankook.Tire();
+	// 클래스 전체 이름을 사용할 경우 import 문은 필요 없다.
+	ch06.Ex12.kumho.Tire tire2 = new ch06.Ex12.kumho.Tire();
 	SnowTire tire3 = new SnowTire();
 	AllSeasonTire tire4 = new AllSeasonTire();
 }

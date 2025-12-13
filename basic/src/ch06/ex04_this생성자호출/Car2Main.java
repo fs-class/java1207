@@ -1,4 +1,4 @@
-package ch06;
+package ch06.ex04_this생성자호출;
 
 public class Car2Main {
 

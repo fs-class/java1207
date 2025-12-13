@@ -1,7 +1,7 @@
-package ch06;
+package ch06.ex11_상수;
 
 /**
- * 상수(Constant)
+ * 25.상수(Constant)
  *  - 불변의 값을 저장하는 필드
  *  - 상수는 객체마다 저장할 필요가 없고, 여러 개의 값을 가져도 안 되기 대문에
  *    static 이면서 final인 특성을 가져야 한다.
